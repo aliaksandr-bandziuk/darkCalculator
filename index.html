@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="style.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="calculator">
+      <div>
+         <input type="text">
+         <button onclick="nummber1(); enable()">1</button>
+         <button onclick="nummber2(); enable()">2</button>
+         <button onclick="nummber3(); enable()">3</button>
+         <button onclick="nummber4(); enable()">4</button>
+         <button onclick="nummber5(); enable()">5</button>
+         <button onclick="nummber6(); enable()">6</button>
+         <button onclick="nummber7(); enable()">7</button>
+         <button onclick="nummber8(); enable()">8</button>
+         <button onclick="nummber9(); enable()">9</button>
+         <button id="disable6" onclick="slash(); disable()">.</button>
+         <button onclick="nummber0(); enable()">0</button>
+         <button id="disable5" onclick="calculate();">=</button>
+      </div>
+      <div>
+         <button onclick="empty()">C</button>
+         <button id="disable1" onclick="plus(); disable()">&plus;</button>
+         <button id="disable1" onclick="minus(); disable()">&minus;</button>
+         <button id="disable1" onclick="times(); disable()">&times;</button>
+         <button id="disable1" onclick="div(); disable()">&div;</button>
+      </div>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>
